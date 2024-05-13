@@ -17,7 +17,7 @@ const SDSendmoney = () => {
       const token = localStorage.getItem("jwt");
 
       const response = await axios.post(
-        "https://65.2.118.186:5000/api/transfer",
+        "https://65.2.118.186/api/transfer",
         formData,
         {
           headers: {

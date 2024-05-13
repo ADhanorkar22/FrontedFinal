@@ -26,8 +26,8 @@ export default function SuperDistList() {
           Authorization: token,
         };
         const response = await axios.get(
-          // "https://65.2.118.186:5000/api/auth/adminds",
-          "https://65.2.118.186:5000/api/protected/underme/Super_Distributor",
+          // "https://65.2.118.186/api/auth/adminds",
+          "https://65.2.118.186/api/protected/underme/Super_Distributor",
           {
             headers: headers,
           }
@@ -50,7 +50,7 @@ export default function SuperDistList() {
         Authorization: token,
       };
       await axios.delete(
-        `https://65.2.118.186:5000/api/protected/delete/${itemId}`,
+        `https://65.2.118.186/api/protected/delete/${itemId}`,
         {
           headers: headers,
         }

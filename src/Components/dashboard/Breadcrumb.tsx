@@ -15,7 +15,7 @@ export default function Breadcrumb() {
           Authorization: token,
         };
         const response = await axios.get(
-          "https://65.2.118.186:5000/api/protected/balance",
+          "https://65.2.118.186/api/protected/balance",
           // "http://api.ipaisa.site/api/protected/balance",
 
           {

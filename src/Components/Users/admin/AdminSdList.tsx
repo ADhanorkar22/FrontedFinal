@@ -26,7 +26,7 @@ export default function AdminSdList() {
         };
         const response = await axios.get(
           // "http://api.ipaisa.site/api/auth/adminsds",
-          "https://65.2.118.186:5000/api/auth/adminsds",
+          "https://65.2.118.186/api/auth/adminsds",
           {
             headers: headers,
           }
@@ -48,7 +48,7 @@ export default function AdminSdList() {
       };
       await axios.delete(
         // `http://localhost:8080/api/delete/superdistributor/${itemId}`,
-        `https://65.2.118.186:5000/api/protected/delete/${itemId}`,
+        `https://65.2.118.186/api/protected/delete/${itemId}`,
         {
           headers: headers,
         }

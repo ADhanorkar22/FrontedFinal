@@ -36,7 +36,7 @@ function AddSuperDistributor() {
     try {
       const token = localStorage.getItem("jwt");
       const response = await axios.post(
-        "https://65.2.118.186:5000/api/auth/register",
+        "https://65.2.118.186/api/auth/register",
         userData,
         {
           headers: {

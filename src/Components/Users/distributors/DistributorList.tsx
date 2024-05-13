@@ -26,9 +26,9 @@ export default function DistributorList() {
           Authorization: token,
         };
         const response = await axios.get(
-          // "https://65.2.118.186:5000/api/auth/adminds",
+          // "https://65.2.118.186/api/auth/adminds",
           // "http://api.ipaisa.site/api/protected/underme/Distributor",
-          "https://65.2.118.186:5000/api/protected/underme/Distributor",
+          "https://65.2.118.186/api/protected/underme/Distributor",
 
           {
             headers: headers,
@@ -52,8 +52,8 @@ export default function DistributorList() {
         Authorization: token,
       };
       await axios.delete(
-        // `https://65.2.118.186:5000/api/delete/superdistributor/${itemId}`,
-        `https://65.2.118.186:5000/api/protected/delete/${itemId}`,
+        // `https://65.2.118.186/api/delete/superdistributor/${itemId}`,
+        `https://65.2.118.186/api/protected/delete/${itemId}`,
 
         {
           headers: headers,
@@ -77,7 +77,7 @@ export default function DistributorList() {
         Authorization: token,
       };
       await axios.put(
-        `https://65.2.118.186:5000/api/update/channelpartner/${itemId}`,
+        `https://65.2.118.186/api/update/channelpartner/${itemId}`,
         {
           headers: headers,
         }

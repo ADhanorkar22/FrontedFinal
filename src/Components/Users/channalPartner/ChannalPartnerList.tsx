@@ -25,7 +25,7 @@ export default function ChannalpartnerList() {
           Authorization: token,
         };
         const response = await axios.get(
-          "https://65.2.118.186:5000/api/auth/users",
+          "https://65.2.118.186/api/auth/users",
           {
             headers: headers,
           }
@@ -47,8 +47,8 @@ export default function ChannalpartnerList() {
         Authorization: token,
       };
       await axios.delete(
-        // `https://65.2.118.186:5000/api/delete/Channel_partner/${itemId}`,
-        `https://65.2.118.186:5000/api/protected/delete/${itemId}`,
+        // `https://65.2.118.186/api/delete/Channel_partner/${itemId}`,
+        `https://65.2.118.186/api/protected/delete/${itemId}`,
 
         {
           headers: headers,
@@ -72,7 +72,7 @@ export default function ChannalpartnerList() {
         Authorization: token,
       };
       await axios.put(
-        `https://65.2.118.186:5000/api/update/channel_Partner/${itemId}`,
+        `https://65.2.118.186/api/update/channel_Partner/${itemId}`,
         {
           headers: headers,
         }

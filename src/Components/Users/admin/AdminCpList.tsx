@@ -25,7 +25,7 @@ export default function AdminCpList() {
           Authorization: token,
         };
         const response = await axios.get(
-          "https://65.2.118.186:5000/api/auth/admincps",
+          "https://65.2.118.186/api/auth/admincps",
           {
             headers: headers,
           }
@@ -47,8 +47,8 @@ export default function AdminCpList() {
         Authorization: token,
       };
       await axios.delete(
-        // `https://65.2.118.186:5000/api/delete/Channel_partner/${itemId}`,
-        `https://65.2.118.186:5000/api/protected/delete/${itemId}`,
+        // `https://65.2.118.186/api/delete/Channel_partner/${itemId}`,
+        `https://65.2.118.186/api/protected/delete/${itemId}`,
         {
           headers: headers,
         }

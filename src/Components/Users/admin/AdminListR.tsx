@@ -26,7 +26,7 @@ export default function AdminListR() {
         };
         const response = await axios.get(
           // "http://api.ipaisa.site/api/auth/adminrs",
-          "https://65.2.118.186:5000/api/auth/adminrs",
+          "https://65.2.118.186/api/auth/adminrs",
           {
             headers: headers,
           }
@@ -49,7 +49,7 @@ export default function AdminListR() {
       };
       await axios.delete(
         // `http://localhost:8080/api/delete/superdistributor/${itemId}`,
-        `https://65.2.118.186:5000/api/protected/delete/${itemId}`,
+        `https://65.2.118.186/api/protected/delete/${itemId}`,
         {
           headers: headers,
         }
@@ -72,7 +72,7 @@ export default function AdminListR() {
         Authorization: token,
       };
       await axios.put(
-        `https://65.2.118.186:5000/api/update/channelpartner/${itemId}`,
+        `https://65.2.118.186/api/update/channelpartner/${itemId}`,
         {
           headers: headers,
         }

@@ -21,7 +21,7 @@ const CPSendmoney = () => {
           "Content-Type": "application/json",
           Authorization: token,
         };
-        const response = await axios.get("https://65.2.118.186:5000/api/usertype", {
+        const response = await axios.get("https://65.2.118.186/api/usertype", {
           headers: headers,
         });
         // setData(response.data);
