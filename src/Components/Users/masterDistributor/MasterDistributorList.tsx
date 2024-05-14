@@ -26,8 +26,8 @@ export default function MasterDistributorList() {
           Authorization: token,
         };
         const response = await axios.get(
-          // "https://65.2.118.186/api/auth/adminds",
-          "https://65.2.118.186/api/protected/underme/Master_Distributor",
+          // "https://ipaisa.site/api/auth/adminds",
+          "https://ipaisa.site/api/protected/underme/Master_Distributor",
           {
             headers: headers,
           }
@@ -51,7 +51,7 @@ export default function MasterDistributorList() {
       };
       await axios.delete(
         // `http://localhost:8080/api/delete/superdistributor/${itemId}`,
-        `https://65.2.118.186/api/protected/delete/${itemId}`,
+        `https://ipaisa.site/api/protected/delete/${itemId}`,
 
         {
           headers: headers,

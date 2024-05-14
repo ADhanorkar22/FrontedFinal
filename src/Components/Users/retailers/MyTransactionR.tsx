@@ -13,10 +13,10 @@ import axios from "axios";
 //     try {
 //       let apiUrl = "";
 //       if (transactionType === "wallet") {
-//         // apiUrl = `https://65.2.118.186/api/ftrans?startDate=${fromDate}&endDate=${toDate}`;
-//         apiUrl = `https://65.2.118.186/api/protected/adminalltransactions`;
+//         // apiUrl = `https://ipaisa.site/api/ftrans?startDate=${fromDate}&endDate=${toDate}`;
+//         apiUrl = `https://ipaisa.site/api/protected/adminalltransactions`;
 //       } else if (transactionType === "transactions") {
-//         // apiUrl = `https://65.2.118.186/api/protected/adminalltransactions`;
+//         // apiUrl = `https://ipaisa.site/api/protected/adminalltransactions`;
 //       }
 //       const response = await axios.get(apiUrl);
 //       setTransactions(response.data);
@@ -35,10 +35,10 @@ export default function MyTransactionCp() {
     try {
       let apiUrl = "";
       if (transactionType === "wallet") {
-        // apiUrl = `https://65.2.118.186/api/ftrans?startDate=${fromDate}&endDate=${toDate}`;
-        apiUrl = `https://65.2.118.186/api/protected/my-transactions`;
+        // apiUrl = `https://ipaisa.site/api/ftrans?startDate=${fromDate}&endDate=${toDate}`;
+        apiUrl = `https://ipaisa.site/api/protected/my-transactions`;
       } else if (transactionType === "transactions") {
-        // apiUrl = `https://65.2.118.186/api/protected/adminalltransactions`;
+        // apiUrl = `https://ipaisa.site/api/protected/adminalltransactions`;
       }
       const token = localStorage.getItem("jwt");
       const response = await axios.get(apiUrl, {

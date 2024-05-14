@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import SearchIcon from "@mui/icons-material/Search";
 import { TextField, MenuItem, Button } from "@mui/material";
 const AddMainBalance = () => {
+ // const apiUrl = process.env.REACT_APP_API_URL;
   const [data, setData] = useState<any>();
   useEffect(() => {
     const fetchData = async () => {
@@ -14,7 +15,7 @@ const AddMainBalance = () => {
           Authorization: token,
         };
         const responsebalance = await axios.get(
-          "https://65.2.118.186/api/protected/balance",
+          "https://ipaisa.site/api/protected/balance",
           {
             headers: headers,
           }
@@ -42,7 +43,7 @@ const AddMainBalance = () => {
     try {
       const token = localStorage.getItem("jwt");
       const response = await axios.get(
-        `https://65.2.118.186/api/protected/userrr/${formData.receiverId}`,
+        `https://ipaisa.site/api/protected/userrr/${formData.receiverId}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -66,7 +67,7 @@ const AddMainBalance = () => {
     try {
       const token = localStorage.getItem("jwt");
       const response = await axios.post(
-        "https://65.2.118.186/api/protected/transfer",
+        "https://ipaisa.site/api/protected/transfer",
         formData,
         {
           headers: {
@@ -228,7 +229,7 @@ export default AddMainBalance;
 //           Authorization: token,
 //         };
 //         const responsebalance = await axios.get(
-//           "https://65.2.118.186/api/protected/balance",
+//           "https://ipaisa.site/api/protected/balance",
 //           {
 //             headers: headers,
 //           }
@@ -261,7 +262,7 @@ export default AddMainBalance;
 //       try {
 //         const token = localStorage.getItem("jwt");
 //         const response = await axios.get(
-//           `https://65.2.118.186/api/protected/userrr/${value}`,
+//           `https://ipaisa.site/api/protected/userrr/${value}`,
 //           {
 //             headers: {
 //               "Content-Type": "application/json",
@@ -288,7 +289,7 @@ export default AddMainBalance;
 //     try {
 //       const token = localStorage.getItem("jwt");
 //       const response = await axios.post(
-//         "https://65.2.118.186/api/protected/transfer",
+//         "https://ipaisa.site/api/protected/transfer",
 //         formData,
 //         {
 //           headers: {

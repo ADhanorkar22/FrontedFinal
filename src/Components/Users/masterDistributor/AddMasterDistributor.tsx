@@ -36,7 +36,7 @@ function AddMasterDistributor() {
     try {
       const token = localStorage.getItem("jwt");
       const response = await axios.post(
-        "https://65.2.118.186/api/auth/register",
+        "https://ipaisa.site/api/auth/register",
         userData,
         {
           headers: {

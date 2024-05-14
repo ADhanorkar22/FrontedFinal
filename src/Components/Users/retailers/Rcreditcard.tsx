@@ -147,7 +147,7 @@ export default function Rcreditcard() {
 
   const initiatePayment = () => {
     // API endpoint to initiate payment
-    const url = "https://api.ipaisa.site/initiate-payment";
+    const url = "https://ipaisa.site/initiate-payment";
     // Data to send in the request
     const requestData = {
       creditCardNumber: creditCardNumber,

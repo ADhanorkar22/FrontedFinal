@@ -25,7 +25,7 @@ export default function ChannalpartnerList() {
           Authorization: token,
         };
         const response = await axios.get(
-          "https://65.2.118.186/api/auth/users",
+          "https://ipaisa.site/api/auth/users",
           {
             headers: headers,
           }
@@ -47,8 +47,8 @@ export default function ChannalpartnerList() {
         Authorization: token,
       };
       await axios.delete(
-        // `https://65.2.118.186/api/delete/Channel_partner/${itemId}`,
-        `https://65.2.118.186/api/protected/delete/${itemId}`,
+        // `https://ipaisa.site/api/delete/Channel_partner/${itemId}`,
+        `https://ipaisa.site/api/protected/delete/${itemId}`,
 
         {
           headers: headers,
@@ -72,7 +72,7 @@ export default function ChannalpartnerList() {
         Authorization: token,
       };
       await axios.put(
-        `https://65.2.118.186/api/update/channel_Partner/${itemId}`,
+        `https://ipaisa.site/api/update/channel_Partner/${itemId}`,
         {
           headers: headers,
         }

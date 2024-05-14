@@ -25,7 +25,7 @@ export const LoginPage = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "https://65.2.118.186/api/auth/signin",
+        "https://ipaisa.site/api/auth/signin",
         // "http://api.ipaisa.site/api/auth/signin",
 
         credentials

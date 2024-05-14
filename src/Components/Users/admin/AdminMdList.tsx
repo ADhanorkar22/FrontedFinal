@@ -26,7 +26,7 @@ export default function AdminMdList() {
         };
         const response = await axios.get(
           // "http://api.ipaisa.site/api/auth/adminmds",
-          "https://65.2.118.186/api/auth/adminmds",
+          "https://ipaisa.site/api/auth/adminmds",
           {
             headers: headers,
           }
@@ -49,7 +49,7 @@ export default function AdminMdList() {
       };
       await axios.delete(
         // `http://api.ipaisa.site/api/delete/superdistributor/${itemId}`,
-        `https://65.2.118.186/api/protected/delete/${itemId}`,
+        `https://ipaisa.site/api/protected/delete/${itemId}`,
 
         {
           headers: headers,
