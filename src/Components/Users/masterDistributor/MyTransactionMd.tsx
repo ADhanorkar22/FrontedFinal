@@ -13,10 +13,10 @@ export default function MyTransactionCp() {
     try {
       let apiUrl = "";
       if (transactionType === "wallet") {
-        // apiUrl = `https://ipaisa.site/api/ftrans?startDate=${fromDate}&endDate=${toDate}`;
-        apiUrl = `https://ipaisa.site/api/protected/my-transactions`;
+        // apiUrl = `https://api.ipaisa.site/api/ftrans?startDate=${fromDate}&endDate=${toDate}`;
+        apiUrl = `https://api.ipaisa.site/api/protected/my-transactions`;
       } else if (transactionType === "transactions") {
-        // apiUrl = `https://ipaisa.site/api/protected/adminalltransactions`;
+        // apiUrl = `https://api.ipaisa.site/api/protected/adminalltransactions`;
       }
       const token = localStorage.getItem("jwt");
       const response = await axios.get(apiUrl, {

@@ -26,9 +26,9 @@ export default function DistributorList() {
           Authorization: token,
         };
         const response = await axios.get(
-          // "https://ipaisa.site/api/auth/adminds",
+          // "https://api.ipaisa.site/api/auth/adminds",
           // "http://api.ipaisa.site/api/protected/underme/Distributor",
-          "https://ipaisa.site/api/protected/underme/Distributor",
+          "https://api.ipaisa.site/api/protected/underme/Distributor",
 
           {
             headers: headers,
@@ -52,8 +52,8 @@ export default function DistributorList() {
         Authorization: token,
       };
       await axios.delete(
-        // `https://ipaisa.site/api/delete/superdistributor/${itemId}`,
-        `https://ipaisa.site/api/protected/delete/${itemId}`,
+        // `https://api.ipaisa.site/api/delete/superdistributor/${itemId}`,
+        `https://api.ipaisa.site/api/protected/delete/${itemId}`,
 
         {
           headers: headers,
@@ -77,7 +77,7 @@ export default function DistributorList() {
         Authorization: token,
       };
       await axios.put(
-        `https://ipaisa.site/api/update/channelpartner/${itemId}`,
+        `https://api.ipaisa.site/api/update/channelpartner/${itemId}`,
         {
           headers: headers,
         }

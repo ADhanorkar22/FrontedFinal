@@ -26,8 +26,8 @@ export default function SuperDistList() {
           Authorization: token,
         };
         const response = await axios.get(
-          // "https://ipaisa.site/api/auth/adminds",
-          "https://ipaisa.site/api/protected/underme/Super_Distributor",
+          // "https://api.ipaisa.site/api/auth/adminds",
+          "https://api.ipaisa.site/api/protected/underme/Super_Distributor",
           {
             headers: headers,
           }
@@ -50,7 +50,7 @@ export default function SuperDistList() {
         Authorization: token,
       };
       await axios.delete(
-        `https://ipaisa.site/api/protected/delete/${itemId}`,
+        `https://api.ipaisa.site/api/protected/delete/${itemId}`,
         {
           headers: headers,
         }

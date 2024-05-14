@@ -27,8 +27,8 @@ export default function RetailersList() {
           Authorization: token,
         };
         const response = await axios.get(
-          // "https://ipaisa.site/api/auth/adminds",
-          "https://ipaisa.site/api/protected/underme/Retailer",
+          // "https://api.ipaisa.site/api/auth/adminds",
+          "https://api.ipaisa.site/api/protected/underme/Retailer",
           {
             headers: headers,
           }
@@ -51,8 +51,8 @@ export default function RetailersList() {
         Authorization: token,
       };
       await axios.delete(
-        // `https://ipaisa.site/api/delete/superdistributor/${itemId}`,
-        `https://ipaisa.site/api/protected/delete/${itemId}`,
+        // `https://api.ipaisa.site/api/delete/superdistributor/${itemId}`,
+        `https://api.ipaisa.site/api/protected/delete/${itemId}`,
 
         {
           headers: headers,

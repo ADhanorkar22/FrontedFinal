@@ -13,11 +13,11 @@ export default function Reports() {
     try {
       let apiUrl = "";
       if (transactionType === "wallet") {
-        // apiUrl = `https://ipaisa.site/api/ftrans?startDate=${fromDate}&endDate=${toDate}`;
-        apiUrl = `https://ipaisa.site/api/protected/adminalltransactions`;
+        // apiUrl = `https://api.ipaisa.site/api/ftrans?startDate=${fromDate}&endDate=${toDate}`;
+        apiUrl = `https://api.ipaisa.site/api/protected/adminalltransactions`;
       } else if (transactionType === "transactions") {
-        // apiUrl = `https://ipaisa.site/api/protected/adminalltransactions`;
-        apiUrl = `https://ipaisa.site/api/get/paymenttransaction`;
+        // apiUrl = `https://api.ipaisa.site/api/protected/adminalltransactions`;
+        apiUrl = `https://api.ipaisa.site/api/get/paymenttransaction`;
       }
       console.log(transactionType);
       const response = await axios.get(apiUrl);
@@ -515,10 +515,10 @@ export default function Reports() {
 //     try {
 //       let apiUrl = "";
 //       if (transactionType === "wallet") {
-//         apiUrl = `https://ipaisa.site/api/ftrans?startDate=${fromDate}&endDate=${toDate}`;
-//         // apiUrl = `https://ipaisa.site/api/protected/adminalltransactions`;
+//         apiUrl = `https://api.ipaisa.site/api/ftrans?startDate=${fromDate}&endDate=${toDate}`;
+//         // apiUrl = `https://api.ipaisa.site/api/protected/adminalltransactions`;
 //       } else if (transactionType === "transactions") {
-//         apiUrl = `https://ipaisa.site/api/all`;
+//         apiUrl = `https://api.ipaisa.site/api/all`;
 //       }
 //       const response = await axios.get(apiUrl);
 //       setTransactions(response.data);

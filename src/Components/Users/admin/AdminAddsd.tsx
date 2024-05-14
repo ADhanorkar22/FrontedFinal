@@ -43,7 +43,7 @@ function AdminAddsd() {
     try {
       const token = localStorage.getItem("jwt");
       const response = await axios.post(
-        "https://ipaisa.site/api/auth/register",
+        "https://api.ipaisa.site/api/auth/register",
         userData,
         {
           headers: {

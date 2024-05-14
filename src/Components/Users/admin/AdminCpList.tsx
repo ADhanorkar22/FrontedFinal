@@ -25,7 +25,7 @@ export default function AdminCpList() {
           Authorization: token,
         };
         const response = await axios.get(
-          "https://ipaisa.site/api/auth/admincps",
+          "https://api.ipaisa.site/api/auth/admincps",
           {
             headers: headers,
           }
@@ -47,8 +47,8 @@ export default function AdminCpList() {
         Authorization: token,
       };
       await axios.delete(
-        // `https://ipaisa.site/api/delete/Channel_partner/${itemId}`,
-        `https://ipaisa.site/api/protected/delete/${itemId}`,
+        // `https://api.ipaisa.site/api/delete/Channel_partner/${itemId}`,
+        `https://api.ipaisa.site/api/protected/delete/${itemId}`,
         {
           headers: headers,
         }

@@ -25,7 +25,7 @@ export default function AdminDList() {
           Authorization: token,
         };
         const response = await axios.get(
-          "https://ipaisa.site/api/auth/adminds",
+          "https://api.ipaisa.site/api/auth/adminds",
           {
             headers: headers,
           }
@@ -48,7 +48,7 @@ export default function AdminDList() {
         Authorization: token,
       };
       await axios.delete(
-        `https://ipaisa.site/api/protected/delete/${itemId}`,
+        `https://api.ipaisa.site/api/protected/delete/${itemId}`,
         {
           headers: headers,
         }

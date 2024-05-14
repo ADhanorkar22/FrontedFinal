@@ -15,7 +15,7 @@ const AddMainBalance = () => {
           Authorization: token,
         };
         const responsebalance = await axios.get(
-          "https://ipaisa.site/api/protected/balance",
+          "https://api.ipaisa.site/api/protected/balance",
           {
             headers: headers,
           }
@@ -43,7 +43,7 @@ const AddMainBalance = () => {
     try {
       const token = localStorage.getItem("jwt");
       const response = await axios.get(
-        `https://ipaisa.site/api/protected/userrr/${formData.receiverId}`,
+        `https://api.ipaisa.site/api/protected/userrr/${formData.receiverId}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const AddMainBalance = () => {
     try {
       const token = localStorage.getItem("jwt");
       const response = await axios.post(
-        "https://ipaisa.site/api/protected/transfer",
+        "https://api.ipaisa.site/api/protected/transfer",
         formData,
         {
           headers: {
@@ -229,7 +229,7 @@ export default AddMainBalance;
 //           Authorization: token,
 //         };
 //         const responsebalance = await axios.get(
-//           "https://ipaisa.site/api/protected/balance",
+//           "https://api.ipaisa.site/api/protected/balance",
 //           {
 //             headers: headers,
 //           }
@@ -262,7 +262,7 @@ export default AddMainBalance;
 //       try {
 //         const token = localStorage.getItem("jwt");
 //         const response = await axios.get(
-//           `https://ipaisa.site/api/protected/userrr/${value}`,
+//           `https://api.ipaisa.site/api/protected/userrr/${value}`,
 //           {
 //             headers: {
 //               "Content-Type": "application/json",
@@ -289,7 +289,7 @@ export default AddMainBalance;
 //     try {
 //       const token = localStorage.getItem("jwt");
 //       const response = await axios.post(
-//         "https://ipaisa.site/api/protected/transfer",
+//         "https://api.ipaisa.site/api/protected/transfer",
 //         formData,
 //         {
 //           headers: {
